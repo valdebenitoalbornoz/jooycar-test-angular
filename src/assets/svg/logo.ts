@@ -1,0 +1,4 @@
+export const appLogoIcon = {
+    data: `<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 143.2 150" xml:space="preserve"><style>.st0{fill:#10519d}.st1{fill:#2196f3}.st3{fill:#1878c6}</style><path class="st0" d="M13.3 61.8H130v27.6H13.3z"/><path class="st1" d="M71.6 0v31.4l-58.3 58L0 76.3v-6.9z"/><path fill="#1565c0" d="M56.1 105.8l15.6 15.7V150l-29.6-29.7z"/><path class="st1" d="M71.6 61.8l-39.4 40.9s-3.3 5.4 0 8.2 11.2 10.7 11.2 10.7l28.3-29.9-.1-29.9z"/><path class="st0" d="M87.3 105.8l-15.6 15.7V150l29.6-29.7z"/><path class="st1" d="M71.7 150v-28.5H43.4z"/><path class="st3" d="M71.7 150l.1-28.5H100"/><path class="st3" d="M71.8 61.8l39.4 40.9s3.3 5.4 0 8.2c-3.3 2.8-11.2 10.7-11.2 10.7L71.7 91.7l.1-29.9zM71.6 0v31.4l58.3 58 13.3-13.1v-6.9z"/></svg>`,
+    name: 'logo'
+};
