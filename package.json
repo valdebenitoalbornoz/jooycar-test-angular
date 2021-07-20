@@ -4,10 +4,10 @@
   "scripts": {
     "ng": "ng",
     "dev": "ng serve",
-    "start": "node ./server.js",
+    "start": "npm run svg-generator && node ./server.js",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "heroku-postbuild": "ng build --aot --prod",
+    "heroku-postbuild": "ng build --aot",
     "test": "ng test",
     "generate-icons": "svg-generator"
   },
@@ -15,9 +15,6 @@
     "node": "12.14.1",
     "npm": "7.7.6"
   },
-
-
-
   "budgets": [
        {
           "type": "initial",
@@ -30,6 +27,7 @@
     "@angular/animations": "~12.1.2",
     "@angular/common": "~12.1.2",
     "@angular/compiler": "~12.1.2",
+    "@angular/compiler-cli": "~12.1.2",
     "@angular/core": "~12.1.2",
     "@angular/forms": "~12.1.2",
     "@angular/platform-browser": "~12.1.2",
