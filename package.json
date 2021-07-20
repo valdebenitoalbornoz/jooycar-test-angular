@@ -15,6 +15,16 @@
     "node": "12.14.1",
     "npm": "7.7.6"
   },
+
+
+
+  "budgets": [
+       {
+          "type": "initial",
+          "maximumWarning": "2mb",
+          "maximumError": "5mb"
+       }
+    ],
   "private": true,
   "dependencies": {
     "@angular/animations": "~12.1.2",
