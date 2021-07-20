@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BoxData, Menu } from 'src/app/app.types';
-import { DashboardService } from 'src/app/dashboard/dashboard.service';
+import { DashboardService } from 'src/app/modules/dashboard/dashboard.service';
 import { boxes } from 'src/app/data';
 
 @Component({

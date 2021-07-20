@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Menu } from 'src/app/app.types';
-import { DashboardService } from 'src/app/dashboard/dashboard.service';
+import { DashboardService } from 'src/app/modules/dashboard/dashboard.service';
 import { menu } from 'src/app/data';
 
 @Component({

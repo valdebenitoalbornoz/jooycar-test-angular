@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { BoxData, Menu } from '../app.types';
+import { BoxData, Menu } from '../../app.types';
 @Injectable({
   providedIn: 'root'
 })
