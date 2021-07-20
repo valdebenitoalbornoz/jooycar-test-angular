@@ -1,6 +1,7 @@
 <div class="home-container">
     <div class="home-box" *ngFor="let box of boxes">
-        <app-summary-box [box]="box"></app-summary-box>
+        <app-summary-box [box]="box" [color]="box.color"></app-summary-box>
+       
     </div>
     <div class="summary-container">
         <div class="summary-container-title">

@@ -1,5 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-navbar',
@@ -8,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
   @Output() toggle = new EventEmitter();
-  constructor(private _router: Router) { }
+  constructor(private _authService: AuthService) { }
 
   ngOnInit(): void {
   }
@@ -19,8 +20,7 @@ export class NavbarComponent implements OnInit {
   }
 
   logout() {
-    localStorage.clear();
-    this._router.navigate([ 'login' ]);
+    this._authService.logout();
   }
 
 }

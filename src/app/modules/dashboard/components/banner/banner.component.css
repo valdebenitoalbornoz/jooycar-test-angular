@@ -6,6 +6,7 @@
     text-align: center;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    justify-content:space-around
 }
 
 .banner-welcome {
@@ -23,8 +24,14 @@
     }
 
 .banner-buttons {
+    width: 100%;
     grid-column-start: 5;
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 1em;
 }
+    .banner-buttons .btn-xs {
+        font-size: 9pt;
+        font-weight: 500;
+        padding: 0.5em 1em;
+    }

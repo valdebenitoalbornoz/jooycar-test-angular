@@ -31,15 +31,15 @@ import { SidebarHeaderUserComponent } from './components/sidebar/sidebar-header/
 import { SidebarBodyComponent } from './components/sidebar/sidebar-body/sidebar-body.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { BannerComponent } from './components/banner/banner.component';
-import { TabsComponent } from './components/tabs/tabs.component';
-import { HomeTabComponent } from './components/tabs/home-tab/home-tab.component';
-import { BudgetTabComponent } from './components/tabs/budget-tab/budget-tab.component';
-import { TeamTabComponent } from './components/tabs/team-tab/team-tab.component';
+import { TabsComponent } from './components/content/tabs/tabs.component';
+import { HomeTabComponent } from './components/content/tabs/home-tab/home-tab.component';
+import { BudgetTabComponent } from './components/content/tabs/budget-tab/budget-tab.component';
+import { TeamTabComponent } from './components/content/tabs/team-tab/team-tab.component';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { RouterModule } from '@angular/router';
 import { ContentComponent } from './components/content/content.component';
-import { HomeChartComponent } from './components/tabs/home-tab/home-chart/home-chart.component';
-import { HomeSummaryBoxComponent } from './components/tabs/home-tab/home-summary-box/home-summary-box.component';
+import { HomeChartComponent } from './components/content/tabs/home-tab/home-chart/home-chart.component';
+import { HomeSummaryBoxComponent } from './components/content/tabs/home-tab/home-summary-box/home-summary-box.component';
 import { DashboardService } from '../../services/dashboard.service';
 
 

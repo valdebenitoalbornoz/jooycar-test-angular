@@ -1,10 +1,19 @@
 .welcome-container {
-    background: var(--dark);
     color: var(--light);
     height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     flex-direction: column;
     padding: 15%;
     color: var(--semi-light);
+    background: url(/assets/svg/dotted-square.svg), url(/assets/svg/background-login.svg), var(--dark);
+    background-size: 200px, 100% 100%, cover;
+    background-position:  top right;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.welcome-title {
+    font-size: 32pt;
 }

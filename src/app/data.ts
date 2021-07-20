@@ -70,7 +70,7 @@ export const boxes: BoxData[] = [
         title: 'Overdue',
         value: 16.850,
         label: 'Tasks',
-        color: 'blue',
+        color: 'red',
         insight: {
             label: 'From yesterday',
             value: 9.1

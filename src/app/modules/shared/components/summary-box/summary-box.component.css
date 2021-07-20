@@ -1,11 +1,24 @@
 .box-card {
     background: var(--light);
-    padding: 1em;
+    padding: 0.5em;
     border-radius: 8px;
     color: var(--gray);
     box-shadow: 2px 2px 4px var(--gray);
     height: 100%;
     text-align: center;
+}
+
+.box-card.box-card-blue {
+    color: var(--blue);
+}
+.box-card.box-card-red {
+    color: var(--red);
+}
+.box-card.box-card-yellow {
+    color: var(--yellow);
+}
+.box-card.box-card-green {
+    color: var(--green);
 }
 
 .box-title {

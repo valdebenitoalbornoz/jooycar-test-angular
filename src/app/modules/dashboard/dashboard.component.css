@@ -3,9 +3,12 @@
 }
 
     .dashboard-container > .sidebar {
-        width: 0;
-        transition: all width 2s;
+        left: -100%;
+        position:relative;
+        visibility: visible;
+        transition: all 0.5s ease 0s;
     }
         .dashboard-container > .sidebar.active-sidebar {
-            width: fit-content;
+            left: 0;
+            visibility: visible;
         }

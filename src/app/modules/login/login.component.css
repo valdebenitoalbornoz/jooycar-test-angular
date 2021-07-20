@@ -2,14 +2,15 @@
     display: grid;
     height: 100vh;
     grid-template-columns: 25% 25% 50%;
-    grid-template-rows: 20% 60% 20%;
+    grid-template-rows: 10% 70% 10% 10%;
+    align-items: stretch;
 }
 
 .login-container .login-form  {
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 2 / 4;
 }
 .login-container .login-welcome  {
     grid-column: 3;
-    grid-row: 1;
+    grid-row: 1 / 4;
 }

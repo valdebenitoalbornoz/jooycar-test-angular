@@ -1,7 +1,8 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { filter } from 'rxjs/operators';
+import { distinctUntilChanged, filter } from 'rxjs/operators';
 import { NavigationStart, Router } from '@angular/router';
+import { AuthService } from './services/auth.service';
 
 // TODO: Add to config file
 const DEFAULT_SPLASH_TIME = 1000;
@@ -15,7 +16,10 @@ export class AppComponent implements OnInit, OnDestroy{
   activeSplash: boolean = false;
   routeChangeSubscription$?: Subscription;
   background = true;
-  constructor(private _router: Router) {
+  constructor(
+    private _router: Router,
+    private _authService: AuthService,
+  ) {
   }
   
   ngOnInit(): void {
@@ -23,7 +27,16 @@ export class AppComponent implements OnInit, OnDestroy{
       .pipe(
         filter(event => event instanceof NavigationStart)
       )
-      .subscribe((e : any) => this.showSplash(true))
+      .subscribe((e : any) => this.showSplash(true));
+
+    this._authService.isLogged$
+    .pipe(
+      distinctUntilChanged()
+    )
+    .subscribe(logged => {
+      console.log({ logged })
+      this._router.navigate(logged ? [ 'dashboard/home' ] : [ 'login' ])
+    });
   }
   
   ngOnDestroy(): void {

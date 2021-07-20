@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeTabComponent } from './components/tabs/home-tab/home-tab.component';
-import { BudgetTabComponent } from './components/tabs/budget-tab/budget-tab.component';
-import { TeamTabComponent } from './components/tabs/team-tab/team-tab.component';
+import { HomeTabComponent } from './components/content/tabs/home-tab/home-tab.component';
+import { BudgetTabComponent } from './components/content/tabs/budget-tab/budget-tab.component';
+import { TeamTabComponent } from './components/content/tabs/team-tab/team-tab.component';
 import { DashboardComponent } from './dashboard.component';
+import { AuthGuard } from 'src/app/guards/auth.guard';
 
 const routes: Routes = [
   {
     path: 'dashboard',
     component: DashboardComponent,
+    canActivate: [ AuthGuard ],
     children: [
       {
         path: 'home',
@@ -22,6 +24,10 @@ const routes: Routes = [
         path: 'team',
         component: TeamTabComponent
       },
+      {
+        path: '**',
+        redirectTo: 'home'
+      }
     ]
   },
 ];

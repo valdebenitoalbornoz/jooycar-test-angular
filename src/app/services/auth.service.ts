@@ -1,19 +1,30 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 
+/** (Fake Login Service) */
+
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
-  public source = new BehaviorSubject<boolean>(false);
+  public isLogged = localStorage.getItem('token') !== null;
+  public source = new BehaviorSubject<boolean>(this.isLogged);
   public isLogged$ = this.source.asObservable();
   constructor() { }
 
   login() {
-    this.source.next(true);
+    localStorage.setItem('token', Math.random().toString(36).slice(2))
+    this.isLogged = true;
+    this.next();
   }
   
   logout() {
-    this.source.next(false);
+    localStorage.clear();
+    this.isLogged = false;
+    this.next();
+  }
+  
+  next() {
+    this.source.next(this.isLogged);
   }
 }

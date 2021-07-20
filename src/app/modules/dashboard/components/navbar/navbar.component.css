@@ -9,6 +9,10 @@
 }
     .toggle-nav {
         cursor: pointer;
+        margin-left: 230px;
+        font-size: 16pt;
+        font-weight: bold;
+
     }
         .toggle-nav:hover {
             color: var(--primary);

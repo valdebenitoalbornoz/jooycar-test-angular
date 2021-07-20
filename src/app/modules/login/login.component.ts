@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -8,13 +9,17 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private _router: Router) { }
+  constructor(
+    private _authService: AuthService,
+  ) { }
 
   ngOnInit(): void {
+
   }
 
   onLogged(logged: boolean) {
-    this._router.navigate(logged ? [ 'dashboard/home' ] : [ 'login' ]);
+    // TODO: Save tokens from backend
+    this._authService.login();
   }
 
 }

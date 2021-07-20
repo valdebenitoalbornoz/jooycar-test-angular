@@ -1,4 +1,4 @@
-<div class="box-card" *ngIf="box">
+<div [class]="'box-card box-card-' + color" *ngIf="box">
     <div class="box-title">
         <div>
             {{ box.title }}

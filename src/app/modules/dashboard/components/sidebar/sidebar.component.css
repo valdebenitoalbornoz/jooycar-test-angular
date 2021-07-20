@@ -1,8 +1,9 @@
 .sidebar-container {
     height: 100vh;
     max-height: 100vh;
+    position: fixed;
     overflow-y: auto;
-    width: 280px;
+    width: 230px;
     background-color: var(--dark);
     color: var(--gray);
 }

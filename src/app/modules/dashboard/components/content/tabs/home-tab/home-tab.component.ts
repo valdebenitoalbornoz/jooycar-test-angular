@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BoxData, Menu } from 'src/app/app.types';
+import { BoxData } from 'src/app/app.types';
 import { DashboardService } from 'src/app/services/dashboard.service';
 import { boxes } from 'src/app/data';
 
@@ -14,7 +14,7 @@ export class HomeTabComponent implements OnInit {
     series: [
       {
         name: 'Serie 1',
-        data: [ 10, 9.05, 8.8, 9.2, 4,8, 9.1, 17 ],
+        data: [ 10, 9.05, 8.8, 9.2, 4.8, 9.1, 17 ],
         type: 'column'
       },
       {

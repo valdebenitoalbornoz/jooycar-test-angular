@@ -8,7 +8,7 @@ import { BoxData, HomeColor } from 'src/app/app.types';
 })
 export class SummaryBoxComponent implements OnInit {
   @Input() box?: BoxData;
-  @Input() color: HomeColor = null;
+  @Input() color: HomeColor = 'blue';
   constructor() { }
 
 

@@ -3,7 +3,7 @@
     display: grid;
     grid-auto-rows: auto;
     justify-content: center;
-    padding: 2em;
+    padding: 0.5em;
     vertical-align: middle;
     font-weight: bold;
 }
