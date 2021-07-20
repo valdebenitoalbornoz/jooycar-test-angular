@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { LogoSpinnerComponent } from './components/logo-spinner/logo-spinner.component';
 import { SvgIconsModule } from '@ngneat/svg-icon';
-import { appLogoIcon } from '../../assets/svg/logo';
+import { appLogoIcon } from '../../../assets/svg/logo';
 import { AvatarComponent } from './components/avatar/avatar.component';
 import { SummaryBoxComponent } from './components/summary-box/summary-box.component';
 import { CommonModule } from '@angular/common';

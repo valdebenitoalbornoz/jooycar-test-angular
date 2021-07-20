@@ -40,7 +40,7 @@ import { RouterModule } from '@angular/router';
 import { ContentComponent } from './components/content/content.component';
 import { HomeChartComponent } from './components/tabs/home-tab/home-chart/home-chart.component';
 import { HomeSummaryBoxComponent } from './components/tabs/home-tab/home-summary-box/home-summary-box.component';
-import { DashboardService } from './dashboard.service';
+import { DashboardService } from '../../services/dashboard.service';
 
 
 @NgModule({
