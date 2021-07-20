@@ -11,6 +11,10 @@
     "test": "ng test",
     "generate-icons": "svg-generator"
   },
+  "engines": {
+    "node": "12.14.1",
+    "npm": "7.7.6"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~12.1.2",
