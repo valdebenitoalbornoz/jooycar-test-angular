@@ -1,0 +1,23 @@
+.dashboard-navbar {
+    height: 50px;
+    background: var(--light);
+    color: var(--gray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+    .toggle-nav {
+        cursor: pointer;
+    }
+        .toggle-nav:hover {
+            color: var(--primary);
+        }
+
+    .dashboard-main-control {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100px;
+        max-width: 100px;
+    }

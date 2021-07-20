@@ -1,0 +1,43 @@
+.login-form-container {
+    width: 100%;
+    padding: 2em;
+}
+.login-title {
+    font-weight: bolder;
+    margin-top: 2em;
+}
+
+.login-subtitle {
+    color: var(--gray);
+    font-size: small;
+    font-weight: bold;
+}
+
+.sign-in-continue-with {
+    text-align: center;
+}
+
+.social-networks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-networks > div {
+    margin-top: 30px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid var(--gray);
+    width: 80px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    color: var(--gray);
+    transition: all ease 0.5;
+}
+
+    .social-networks > div:hover {
+        color: var(--primary);
+        border-color: var(--primary);
+        box-shadow: 2px 2px 4px var(--primary);
+    }

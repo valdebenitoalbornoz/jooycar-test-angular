@@ -1,0 +1,16 @@
+<div class="p-2 d-flex justify-content-between align-items-center">
+    <div>
+        <app-logo-spinner [fontSizePt]="20"></app-logo-spinner>
+    </div>
+    <div class="p-2 mt-2 d-flex justify-content-between align-items-center">
+        <div class="notification-container">
+            <fa-icon [icon]="[ 'far', 'bell' ]"></fa-icon>
+            <span class="notification-counter">
+                {{ counter }}
+            </span>
+        </div>
+        <div class="ml-4">
+            <fa-icon [icon]="[ 'fas', 'user-circle' ]"></fa-icon>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+.welcome-container {
+    background: var(--dark);
+    color: var(--light);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15%;
+    color: var(--semi-light);
+}

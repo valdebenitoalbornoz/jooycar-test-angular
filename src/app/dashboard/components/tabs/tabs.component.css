@@ -1,0 +1,32 @@
+.dashboard-content {
+    background: rgb(241, 245, 249);
+}
+
+.tabs-header {
+    width: 100%;
+    padding: 5px 0;
+}
+
+.tabs-header .nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.tabs-header .nav-link {
+    background: rgb(221, 227, 233);
+    color: var(--dark);
+    padding: 8px 10px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 10pt;
+    font-weight: bold;
+}
+.tabs-header .nav-link:hover,
+.tabs-header .nav-link.active {
+    background: var(--primary);
+    color: var(--light);
+}
+
+.tabs-content {
+    display: grid;
+}

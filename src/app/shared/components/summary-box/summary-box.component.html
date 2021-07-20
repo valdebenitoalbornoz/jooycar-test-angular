@@ -1,0 +1,19 @@
+<div class="box-card" *ngIf="box">
+    <div class="box-title">
+        <div>
+            {{ box.title }}
+        </div>
+        <div class="box-menu-toggle">
+            <i class="bi bi-three-dots-vertical"></i>
+        </div>
+    </div>
+    <div class="box-value">
+        {{ box.value | number:'1.0-0' }}
+    </div>
+    <div class="box-label">
+        {{ box.label }}
+    </div>
+    <div class="box-insight">
+        {{ box.insight?.label }}: {{ box.insight?.value | number: '1.0-0' }}
+    </div>    
+</div>

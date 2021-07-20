@@ -1,0 +1,11 @@
+.dashboard-container {
+    display: flex;
+}
+
+    .dashboard-container > .sidebar {
+        width: 0;
+        transition: all width 2s;
+    }
+        .dashboard-container > .sidebar.active-sidebar {
+            width: fit-content;
+        }

@@ -1,0 +1,18 @@
+.notification-container {
+    position: relative;
+    font-size: 15pt;
+    margin-right: 2em;
+}
+
+.notification-counter {
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    background-color: var(--success);
+    color: var(--light);
+    font-size: 6pt;
+    text-align: center;
+}

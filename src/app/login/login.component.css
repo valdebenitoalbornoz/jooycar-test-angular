@@ -1,0 +1,15 @@
+.login-container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 20% 60% 20%;
+}
+
+.login-container .login-form  {
+    grid-column: 2;
+    grid-row: 2;
+}
+.login-container .login-welcome  {
+    grid-column: 3;
+    grid-row: 1;
+}

@@ -1,0 +1,36 @@
+.box-card {
+    background: var(--light);
+    padding: 1em;
+    border-radius: 8px;
+    color: var(--gray);
+    box-shadow: 2px 2px 4px var(--gray);
+    height: 100%;
+    text-align: center;
+}
+
+.box-title {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.box-label {
+    width: 100%;
+}
+
+.box-menu-toggle {
+    grid-column: 3;
+    align-self: right;
+    cursor: pointer;
+}
+
+.box-value {
+    font-size: 37pt;
+    font-weight: bold;
+}
+.box-insight {
+    font-size: smaller;
+    color: var(--gray);
+}

@@ -1,1 +1,14 @@
-<p>dashboard works!</p>
+<div class="dashboard-container">
+    <app-sidebar
+        class="sidebar"
+        *ngIf="show"
+        [ngClass]="{
+            'active-sidebar': show
+        }"
+        ></app-sidebar>
+    <div class="flex-fill">
+        <app-navbar (toggle)="onToggle();"></app-navbar>
+        <app-banner></app-banner>
+        <app-content></app-content>
+    </div>
+</div>

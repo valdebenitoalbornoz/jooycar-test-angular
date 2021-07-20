@@ -1,0 +1,35 @@
+<div class="banner">
+
+    <div class="banner-welcome">
+        <app-avatar [size]="50"></app-avatar>
+        <div>
+            <h3 class="mb-0">
+                Welcome back, Brian!
+            </h3>
+            <small class="p-2 text-muted">
+                <fa-icon [icon]="[ 'far', 'bell' ]"></fa-icon>
+                <span>
+                    You have 2 new messages and 15 new tasks
+                </span>
+            </small>
+        </div>
+    </div>
+    <div class="banner-buttons">
+        <button class="btn btn-secondary">
+            <span>
+                <fa-icon [icon]="[ 'fas', 'envelope' ]"></fa-icon>
+            </span>
+            <span class="ml-2">
+                Messages
+            </span>
+        </button>
+        <button class="btn btn-primary">
+            <span>
+                <fa-icon [icon]="[ 'fas', 'envelope' ]"></fa-icon>
+            </span>
+            <span class="ml-2">
+                Settings
+            </span>
+        </button>
+    </div>
+</div>

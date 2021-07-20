@@ -1,1 +1,8 @@
-<p>login works!</p>
+<div class="login-container">
+    <div class="login-form">
+        <app-login-form (onlogged)="onLogged($event)"></app-login-form>
+    </div>
+    <div class="login-welcome">
+        <app-login-welcome></app-login-welcome>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+.banner {
+    background: var(--dark);
+    width: 100%;
+    color: var(--light);
+    padding: 40px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.banner-welcome {
+    grid-column: 2 / 4;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.banner-welcome > app-avatar {
+    margin-right: 1em;
+}
+ 
+    .banner-welcome h3 {
+        font-weight: bolder;
+    }
+
+.banner-buttons {
+    grid-column-start: 5;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1em;
+}

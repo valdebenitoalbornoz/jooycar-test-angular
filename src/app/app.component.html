@@ -1,1 +1,4 @@
-<app-splash></app-splash>
+<app-splash *ngIf="activeSplash; else routerOutlet" [background]="background"></app-splash>
+<ng-template #routerOutlet>
+    <router-outlet></router-outlet>
+</ng-template>

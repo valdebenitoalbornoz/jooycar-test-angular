@@ -1,0 +1,22 @@
+
+<div *ngFor="let item of menu">
+    <div class="section">
+        <div class="section-title">
+            {{ item.name | uppercase }}
+        </div>
+        <div class="section-subtitle">
+            {{ item.description }}
+        </div>
+        <div class="section-menu">
+            <div class="section-menu-item" *ngFor="let subitem of item.routes || []">
+                <div class="section-menu-item-icon">
+                    <i [class]="'bi bi-' + subitem.icon"></i>
+                    <!-- <fa-icon [icon]="[ 'fas', 'calendar-check']"></fa-icon> -->
+                </div>
+                <div class="section-menu-item-page flex-fill">
+                    {{ subitem.name }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

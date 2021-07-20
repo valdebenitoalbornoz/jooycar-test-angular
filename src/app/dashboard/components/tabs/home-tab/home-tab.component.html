@@ -1,0 +1,43 @@
+<div class="home-container">
+    <div class="home-box" *ngFor="let box of boxes">
+        <app-summary-box [box]="box"></app-summary-box>
+    </div>
+    <div class="summary-container">
+        <div class="summary-container-title">
+            <b>
+                Github Issues Summary
+            </b>
+            <div>
+                
+            </div>
+
+        </div>
+        <div class="summary-container-chart">
+            <app-home-chart [chartOptions]="chartOptions"></app-home-chart>
+        </div>
+        <div class="summary-home-subtitle home-subtitle-1">
+            New vs. Closed
+        </div>
+        <div class="summary-home-subtitle home-subtitle-2">
+            Overview
+        </div>
+        <div class="summary-box summary-box-lg summary-box-new-issues">
+            <app-home-summary-box [amount]="214" [title]="'New Issues'"></app-home-summary-box>
+        </div>
+        <div class="summary-box summary-box-lg summary-box-closed">
+            <app-home-summary-box [amount]="75" [title]="'Closed'"></app-home-summary-box>
+        </div>
+        <div class="summary-box summary-box-sm summary-box-fixed">
+            <app-home-summary-box [amount]="3" [title]="'Fixed'"></app-home-summary-box>
+        </div>
+        <div class="summary-box summary-box-sm">
+            <app-home-summary-box [amount]="4" [title]="'Won´t Fix'"></app-home-summary-box>
+        </div>
+        <div class="summary-box summary-box-sm">
+            <app-home-summary-box [amount]="8" [title]="'Re-opened'"></app-home-summary-box>
+        </div>
+        <div class="summary-box summary-box-sm">
+            <app-home-summary-box [amount]="6" [title]="'Needs Triage'"></app-home-summary-box>
+        </div>
+    </div>
+</div>

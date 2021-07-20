@@ -1,10 +1,41 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { filter } from 'rxjs/operators';
+import { NavigationStart, Router } from '@angular/router';
+
+// TODO: Add to config file
+const DEFAULT_SPLASH_TIME = 1000;
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'jooycar-angular-test';
+export class AppComponent implements OnInit, OnDestroy{
+  activeSplash: boolean = false;
+  routeChangeSubscription$?: Subscription;
+  background = true;
+  constructor(private _router: Router) {
+  }
+  
+  ngOnInit(): void {
+    this.routeChangeSubscription$ = this._router.events
+      .pipe(
+        filter(event => event instanceof NavigationStart)
+      )
+      .subscribe((e : any) => this.showSplash(true))
+  }
+  
+  ngOnDestroy(): void {
+    if (this.routeChangeSubscription$) {
+      this.routeChangeSubscription$.unsubscribe();
+    }
+  }
+
+  showSplash(background: boolean) {
+    this.activeSplash = true;
+    this.background = background;
+    setTimeout(() => this.activeSplash = false, DEFAULT_SPLASH_TIME);
+  }
+
 }

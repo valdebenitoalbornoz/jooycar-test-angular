@@ -1,13 +1,17 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { LogoSpinnerComponent } from './components/logo-spinner/logo-spinner.component';
 import { SvgIconsModule } from '@ngneat/svg-icon';
 import { appLogoIcon } from '../../assets/svg/logo';
+import { AvatarComponent } from './components/avatar/avatar.component';
+import { SummaryBoxComponent } from './components/summary-box/summary-box.component';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
   declarations: [
-    LogoSpinnerComponent
+    LogoSpinnerComponent,
+    AvatarComponent,
+    SummaryBoxComponent
   ],
   imports: [
     CommonModule,
@@ -15,6 +19,12 @@ import { appLogoIcon } from '../../assets/svg/logo';
       icons: [ appLogoIcon ]
     })
   ],
-  exports: [ LogoSpinnerComponent ]
+  exports: [ 
+    LogoSpinnerComponent,
+    AvatarComponent,
+    SummaryBoxComponent
+  ]
 })
-export class SharedModule { }
+export class SharedModule {
+ 
+}
