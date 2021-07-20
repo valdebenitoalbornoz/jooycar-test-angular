@@ -1,11 +1,13 @@
 {
   "name": "jooycar-angular-test",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "dev": "ng serve",
+    "start": "node ./server.js",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
+    "heroku-postbuild": "ng build --aot --prod",
     "test": "ng test",
     "generate-icons": "svg-generator"
   },
@@ -27,7 +29,9 @@
     "apexcharts": "^3.27.2",
     "bootstrap": "^5.0.2",
     "bootstrap-icons": "^1.5.0",
+    "express": "^4.17.1",
     "ng-apexcharts": "^1.5.12",
+    "path": "^0.12.7",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"
