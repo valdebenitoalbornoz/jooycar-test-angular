@@ -3,6 +3,7 @@
   "cli": {
     "analytics": "b9060329-ef26-482e-8800-e1aae1cee8f6"
   },
+  
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -42,8 +43,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
