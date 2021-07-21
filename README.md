@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.2.
 
+DEMO https://jooycar-angular-test.herokuapp.com/
+
 ## Development server
 
 Run `npm generate-icons` for get icons on your cloned project.
