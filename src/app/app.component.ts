@@ -1,11 +1,11 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { distinctUntilChanged, filter } from 'rxjs/operators';
-import { NavigationStart, Router } from '@angular/router';
+import { NavigationEnd, NavigationStart, Router } from '@angular/router';
 import { AuthService } from './services/auth.service';
 
 // TODO: Add to config file
-const DEFAULT_SPLASH_TIME = 1000;
+const DEFAULT_SPLASH_TIME = 2000;
 
 @Component({
   selector: 'app-root',
@@ -25,9 +25,12 @@ export class AppComponent implements OnInit, OnDestroy{
   ngOnInit(): void {
     this.routeChangeSubscription$ = this._router.events
       .pipe(
-        filter(event => event instanceof NavigationStart)
+        filter(event => event instanceof NavigationEnd),
       )
-      .subscribe((e : any) => this.showSplash(e.url.startsWith('dashboard')));
+      .subscribe((e : any) => {
+        // No pass background when we are on dashboard page. // FIXME: Get better!
+        this.showSplash(!e.url.startsWith('/dashboard'))
+      });
 
     this._authService.isLogged$
     .pipe(
