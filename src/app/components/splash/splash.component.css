@@ -1,5 +1,6 @@
 .splash-container {
     background: transparent;
+    opacity: 0.5;
     height: 100vh;
     display: grid;
     justify-content: center;
@@ -7,4 +8,5 @@
 }
 .splash-container.dark-splash {
     background: var(--dark);
+    opacity: 1;
 }

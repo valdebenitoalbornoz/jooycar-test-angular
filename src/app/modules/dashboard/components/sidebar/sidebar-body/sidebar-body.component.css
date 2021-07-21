@@ -1,5 +1,5 @@
 .section {
-    padding: 1em;
+    padding: 0.5em;
 }
     .section > .section-title {
         text-transform: uppercase;
