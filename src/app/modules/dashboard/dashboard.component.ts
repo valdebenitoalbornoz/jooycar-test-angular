@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  show = true;
+  show = localStorage.getItem('sidebar-show') === 'on';
   constructor() { }
 
   ngOnInit(): void {
@@ -14,5 +14,7 @@ export class DashboardComponent implements OnInit {
 
   onToggle() {
     this.show = !this.show;
+    // FIXME: It should be better:
+    localStorage.setItem('sidebar-show', this.show ? 'on' : 'off');
   }
 }

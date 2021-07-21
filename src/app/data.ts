@@ -27,7 +27,7 @@ export const menu: Menu[] = [
                 url: '#'
             },
             {
-                icon: 'chat-quote',
+                icon: 'chat-text',
                 name: 'Chat',
                 url: '#'
             },

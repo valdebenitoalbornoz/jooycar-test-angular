@@ -27,14 +27,13 @@ export class AppComponent implements OnInit, OnDestroy{
       .pipe(
         filter(event => event instanceof NavigationStart)
       )
-      .subscribe((e : any) => this.showSplash(true));
+      .subscribe((e : any) => this.showSplash(e.url.startsWith('dashboard')));
 
     this._authService.isLogged$
     .pipe(
       distinctUntilChanged()
     )
     .subscribe(logged => {
-      console.log({ logged })
       this._router.navigate(logged ? [ 'dashboard/home' ] : [ 'login' ])
     });
   }
